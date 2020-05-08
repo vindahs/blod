@@ -28,7 +28,7 @@ sitemaps = {
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("blog.urls"), name="blog-urls"),
+    path("", include("blogger.urls"), name="blogger-urls"),
     path("summernote/", include("django_summernote.urls")),
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
 ]
